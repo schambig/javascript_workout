@@ -37,3 +37,8 @@ let job = {
 };
 // access the first property in object value, use the 'dot syntax'
 alert(job.title);
+
+// reassign a new value to variable age, declare a new variable and make a operation
+age = 35;
+let adultAge = age - 18;
+alert(adultAge);
