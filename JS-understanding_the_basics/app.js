@@ -42,3 +42,15 @@ alert(job.title);
 age = 35;
 let adultAge = age - 18;
 alert(adultAge);
+
+alert('Working with functions');
+// declare new variables to work with function
+let userAge = 30;
+let adultYears;
+
+// function is only 'memorized' with should 'call' it to be executed
+function getAdultYears() {
+    adultYears = userAge - 18;
+}
+getAdultYears(); // syntax of the called function
+alert(adultYears);
