@@ -66,10 +66,22 @@ alert(adultYears);
 alert(testVar); // it retunrs 'outside value'
 
 // use return keyword inside a function then store the returned value in a new variable
-let totalAdultYears;
 alert('Working with return keyword');
+let totalAdultYears;
 function calculateAdultYears() {
     return userAge - 18;
 }
 totalAdultYears = calculateAdultYears();
 alert(totalAdultYears);
+
+// use parameter in a function definition
+alert('Using parameter inside function definition')
+let totalAdultAge;
+function getAdultAge(a) {
+    return a - 18;
+}
+totalAdultAge = getAdultAge(userAge);
+alert(totalAdultAge);
+userAge = 40;
+totalAdultAge = getAdultAge(userAge);
+alert(totalAdultAge);
