@@ -64,3 +64,12 @@ function getAdultYears() {
 getAdultYears(); // syntax of the called function
 alert(adultYears);
 alert(testVar); // it retunrs 'outside value'
+
+// use return keyword inside a function then store the returned value in a new variable
+let totalAdultYears;
+alert('Working with return keyword');
+function calculateAdultYears() {
+    return userAge - 18;
+}
+totalAdultYears = calculateAdultYears();
+alert(totalAdultYears);
