@@ -44,13 +44,23 @@ let adultAge = age - 18;
 alert(adultAge);
 
 alert('Working with functions');
+/*
+When you create a variable inside a function it only works in that function 'scope of variables'
+Variable shadowing: You can create and overwrite variables from outside of functions without affecting the
+outside variable value, use the 'let' keyword
+Important!!: to check for error always look at the browser's developer tools 'console' tab, press(F12)
+*/
 // declare new variables to work with function
 let userAge = 30;
 let adultYears;
+let testVar = 'outside value';
 
 // function is only 'memorized' with should 'call' it to be executed
 function getAdultYears() {
     adultYears = userAge - 18;
+    let testVar = 'inside value'; // create same var from outside but diff value, doesn't modify outside var
+    alert(testVar); // it returns 'inside value'
 }
 getAdultYears(); // syntax of the called function
 alert(adultYears);
+alert(testVar); // it retunrs 'outside value'
