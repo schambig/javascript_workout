@@ -41,17 +41,21 @@ const orders = [
     {   
         customerName: "Salomon",
         total: 2322,
-        delivered: false,x
+        delivered: false,
       },
   ];
+
+// filter method with more than one condition
 const rta3 = orders.filter(item => item.delivered && item.total >= 100)
 console.log('rta3', rta3);
 
+// simple searcher with filter method
 const search = (query) => {
     return orders.filter(item => {
         return item.customerName.includes(query);
     })
 }
 
-// console.log(search('Salo'));
+// we can search for any pattern
+console.log(search('Salo'));
 console.log(search('hsdjkfhdsj'));
