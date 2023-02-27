@@ -59,3 +59,11 @@ const search = (query) => {
 // we can search for any pattern
 console.log(search('Salo'));
 console.log(search('hsdjkfhdsj'));
+
+/**
+ * The filter() method in JavaScript is a built-in array method that allows you to create a new array containing only the elements of an existing array that pass a certain test.
+   The  filter() method accepts a callback function as its argument, which takes three parameters:
+     The current element being processed in the array.
+     The index of the current element being processed.
+     The array on which filter() was called.
+ */
