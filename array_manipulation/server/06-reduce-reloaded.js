@@ -1,5 +1,6 @@
 const items = [1, 3, 2, 3, 3, 2];
 
+// this reduce method returns an object
 const rta = items.reduce((obj, item) => {
     if (!obj[item]) {
         obj[item] = 1;
@@ -38,6 +39,8 @@ const data = [
   },
 ];
 
+
+// this code uses two methods to return an object
 const rta1 = data
 .map(item => item.level)
 .reduce((obj, item) => {
