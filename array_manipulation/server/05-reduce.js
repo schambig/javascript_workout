@@ -25,5 +25,6 @@ console.log('rta', rta);
 
         An accumulator that accumulates the results of each iteration.
         The current element being processed in the array.
-        The callback function should return the new value of the accumulator after each iteration.
+        
+    The callback function should return the new value of the accumulator after each iteration.
  */
