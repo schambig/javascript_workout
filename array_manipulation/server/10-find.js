@@ -43,3 +43,14 @@ const rta3 = products.find(item => item.id === '🍔')
 console.log('find', rta3);
 const rta4 = products.findIndex(item => item.id === '🍔')
 console.log('findIndex', rta4);
+
+/*
+The find() method is a built-in array method in JavaScript
+that is used to search for the first element in an array that satisfies a given condition.
+It returns the value of the first element in the array that meets the condition specified in a callback function,
+or undefined if no such element is found.
+
+    const numbers = [1, 3, 5, 7, 8, 9, 11, 12];
+    const firstEven = numbers.find((element) => element % 2 === 0);
+    console.log(firstEven); // Output: 8
+*/
