@@ -18,3 +18,15 @@ const title = 'Manipulacion De Arrays';
 
 const urlFinal = title.split(' ').join('-').toLowerCase();
 console.log(urlFinal);
+
+/*
+In JavaScript, join() and split() are two methods that can be used to manipulate strings and arrays.
+
+join() method is used to convert an array into a string by concatenating all the elements of the array with a specified separator.
+The syntax for join() method is as follows:
+    array.join(separator)
+
+split() method, on the other hand, is used to convert a string into an array by splitting the string into substrings based on a specified separator.
+The syntax for split() method is as follows:
+    string.split(separator, limit)
+*/
