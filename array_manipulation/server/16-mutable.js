@@ -32,8 +32,8 @@ const products = [
   }
   const productIndexV2 = productsV2.findIndex(item => item.id === update.id);
   productsV2[productIndexV2] = {
-      ...productsV2[productIndexV2],
-      ...update.changes,
+      ...productsV2[productIndexV2], // we need to use spread operator to make a clone and keep the\
+      ...update.changes, // original data of productsV2 and then add 'changes' from update object
   };
   console.log(productsV2);
 
